@@ -12,7 +12,11 @@ import { Task } from './task.model';
       </div>
       <div>
         <label> Enter Task Priority:</label>
-        <input [(ngModel)]="childSelectedTask.priority">
+        <select [(ngModel)]="childSelectedTask.priority">
+          <option value="low" selected="selected">Low</option>
+          <option value="med">Med</option>
+          <option value="high">High</option>
+        </select>
       </div>
       <div>
         <label> Enter Task ID:</label>
