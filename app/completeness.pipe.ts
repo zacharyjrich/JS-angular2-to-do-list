@@ -3,7 +3,7 @@ import {Task} from './task.model';
 
 @Pipe({
   name: "completeness",
-  pure: true //stateless
+  pure: false //stateful. true = stateless.
 })
 export class CompletenessPipe implements PipeTransform {
   transform(input: Task[], desiredCompleteness){

@@ -1,5 +1,4 @@
 export class Task {
   public done: boolean = false;
-  public priority: string = "High";
-  constructor(public description: string, public id: number) { }
+  constructor(public description: string, public priority: string, public id: number) { }
 }
