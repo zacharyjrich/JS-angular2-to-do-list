@@ -20,7 +20,7 @@ import { Task } from './task.model';
   <div>
     <label>Enter Task ID:</label>
     <input #newId>
-    <button (click)="
+    <button class="btn btn-primary" (click)="
     addClicked(newDescription.value, newPriority.value, newId.value);
     newDescription.value='';
     newId.value='';

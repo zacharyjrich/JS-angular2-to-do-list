@@ -4,8 +4,8 @@ import { Task } from './task.model';
 @Component({
   selector: 'my-app',
   template: `
-  <div class="container">
-    <h1>My First Angular 2 App</h1>
+  <div class="container col-md-offset-4">
+    <h1 id="header">To Do List</h1>
     <task-list
       [childTaskList]="masterTaskList"
       (clickSender)="showDetails($event)"
